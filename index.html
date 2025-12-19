@@ -5,10 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>네이버검색창따라하기</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <script src="script.js" defer></script>
 </head>
 <body>
-  
+  <dev class="container">
+    <dev class="search-bar"> 
+      <input type="text" class="search-input" placeholder="검색어를 입력하세요">
+        <dev class="hidden-search-window">
+          <dev class="search-suggestions">
+            <dev class="suggestion-item">검색어 제안 1</dev>
+            <dev class="suggestion-item">검색어 제안 2</dev>
+            <dev class="suggestion-item">검색어 제안 3</dev>
+            <dev class="suggestion-item">검색어 제안 4</dev>
+            <dev class="suggestion-item">검색어 제안 5</dev>
+          </dev>
+        </dev>
+      <button class="search-btn">
+        <svg class="search-icon" src="search-icon.png" alt="검색 버튼 아이콘" xmlns="http://www.w3.org/2000/svg" id="Search-Btn" viewBox="0 0 24 24" width="12" height="12">
+          <path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z"/>
+        </svg>
+      </button>
+    </dev>
+  </dev>
 </body>
 </html>
