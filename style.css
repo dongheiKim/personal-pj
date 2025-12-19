@@ -1,9 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* ============================================
+   리셋 & 기본 스타일
+   ============================================ */
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   font-size: 16px;
@@ -11,20 +8,24 @@ body {
   padding: 40px 20px;
 }
 
+/* ============================================
+   레이아웃
+   ============================================ */
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 50vh;
 }
-
 .search-wrapper {
   width: 100%;
   max-width: 584px;
   position: relative;
 }
 
-/* 검색바 스타일 */
+/* ============================================
+   검색바 (search-bar)
+   ============================================ */
 .search-bar {
   display: flex;
   align-items: center;
@@ -36,20 +37,24 @@ body {
   background-color: #fff;
   gap: 8px;
 }
-
 .search-bar:hover {
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.4);
 }
-
 .search-bar:focus-within {
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.5);
   border-color: rgba(223, 225, 229, 0);
 }
 
+/*
+검색 아이콘 (왼쪽)
+*/
 .search-icon-left {
   flex-shrink: 0;
 }
 
+/*
+검색 입력창
+*/
 .search-input {
   flex: 1;
   border: none;
@@ -58,12 +63,13 @@ body {
   background: transparent;
   color: #202124;
 }
-
 .search-input::placeholder {
   color: #9aa0a6;
 }
 
-.clear-btn,
+/*
+검색 버튼
+*/
 .search-btn {
   background: none;
   border: none;
@@ -75,111 +81,23 @@ body {
   flex-shrink: 0;
   transition: opacity 0.2s;
 }
-
-.clear-btn:hover,
 .search-btn:hover {
   opacity: 0.7;
 }
 
-.clear-btn {
-  display: none;
+/* ============================================
+   검색 결과 영역
+   ============================================ */
+.results-container {
+  margin-top: 30px;
+  padding: 20px;
 }
-
-.search-input:not(:placeholder-shown) ~ .clear-btn {
-  display: flex;
-}
-
-/* 연관 검색어 창 스타일 */
-.search-suggestions-wrapper {
-  position: absolute;
-  top: calc(100% + 8px);
-  left: 0;
-  right: 0;
-  background: #fff;
-  border-radius: 24px;
-  box-shadow: 0 4px 6px rgba(32, 33, 36, 0.28);
-  overflow: hidden;
-  display: none;
-}
-
-.search-suggestions-wrapper.active {
-  display: block;
-}
-
-.suggestions-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 20px;
-  border-bottom: 1px solid #e8eaed;
-}
-
-.suggestions-title {
-  font-size: 14px;
-  color: #70757a;
-  font-weight: 500;
-}
-
-.toggle-suggestions-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  transition: background-color 0.2s;
-}
-
-.toggle-suggestions-btn:hover {
-  background-color: #f1f3f4;
-}
-
-.search-suggestions {
-  padding: 8px 0;
-}
-
-.suggestion-item {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-  cursor: pointer;
-  gap: 12px;
-  transition: background-color 0.1s;
-}
-
-.suggestion-item:hover {
-  background-color: #f1f3f4;
-}
-
-.suggestion-icon {
-  flex-shrink: 0;
-}
-
-.suggestion-text {
-  flex: 1;
+.result-item {
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 3px solid #4285f4;
   font-size: 14px;
   color: #202124;
-}
-
-.delete-history-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.2s;
-  border-radius: 50%;
-}
-
-.suggestion-item:hover .delete-history-btn {
-  opacity: 1;
-}
-
-.delete-history-btn:hover {
-  background-color: #e8eaed;
 }
