@@ -16,88 +16,15 @@
         <svg class="search-icon-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
           <path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z" fill="#9aa0a6"/>
         </svg>
-        <input type="text" class="search-input" placeholder="검색어를 입력하세요">
-        <button class="clear-btn" title="지우기">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
-            <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" fill="#70757a"/>
-          </svg>
-        </button>
+        <input id="search-input" type="text" class="search-input" placeholder="검색어를 입력하세요">
         <button class="search-btn" title="검색">
           <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
             <path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z" fill="#4285f4"/>
           </svg>
         </button>
       </div>
-
-      <!-- 연관 검색어 창 -->
-      <div class="search-suggestions-wrapper">
-        <div class="suggestions-header">
-          <span class="suggestions-title">연관 검색어</span>
-          <button class="toggle-suggestions-btn" title="연관검색어 끄기/켜기">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-              <path d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,12,20Z" fill="#70757a"/>
-              <circle cx="12" cy="12" r="2" fill="#70757a"/>
-            </svg>
-          </button>
-        </div>
-        <div class="search-suggestions">
-          <div class="suggestion-item">
-            <svg class="suggestion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-              <path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z" fill="#70757a"/>
-            </svg>
-            <span class="suggestion-text">검색어 제안 1</span>
-            <button class="delete-history-btn" title="검색기록 삭제">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" fill="#70757a"/>
-              </svg>
-            </button>
-          </div>
-          <div class="suggestion-item">
-            <svg class="suggestion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-              <path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z" fill="#70757a"/>
-            </svg>
-            <span class="suggestion-text">검색어 제안 2</span>
-            <button class="delete-history-btn" title="검색기록 삭제">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" fill="#70757a"/>
-              </svg>
-            </button>
-          </div>
-          <div class="suggestion-item">
-            <svg class="suggestion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-              <path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z" fill="#70757a"/>
-            </svg>
-            <span class="suggestion-text">검색어 제안 3</span>
-            <button class="delete-history-btn" title="검색기록 삭제">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" fill="#70757a"/>
-              </svg>
-            </button>
-          </div>
-          <div class="suggestion-item">
-            <svg class="suggestion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-              <path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z" fill="#70757a"/>
-            </svg>
-            <span class="suggestion-text">검색어 제안 4</span>
-            <button class="delete-history-btn" title="검색기록 삭제">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" fill="#70757a"/>
-              </svg>
-            </button>
-          </div>
-          <div class="suggestion-item">
-            <svg class="suggestion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-              <path d="M23.707,22.293l-5.969-5.969a10.016,10.016,0,1,0-1.414,1.414l5.969,5.969a1,1,0,0,0,1.414-1.414ZM10,18a8,8,0,1,1,8-8A8.009,8.009,0,0,1,10,18Z" fill="#70757a"/>
-            </svg>
-            <span class="suggestion-text">검색어 제안 5</span>
-            <button class="delete-history-btn" title="검색기록 삭제">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
-                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" fill="#70757a"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </div>
+      <!-- 검색 결과 영역 -->
+      <div id="results-container" class="results-container"></div>
     </div>
   </div>
 </body>
